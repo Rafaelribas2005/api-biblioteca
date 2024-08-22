@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@NoArgsConstructor
 public class Livro {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,8 +23,6 @@ public class Livro {
         this.autor = autor;
         this.lancamento = lancamento;
         this.sinopse = sinopse;
-    }
-
-    
+    } 
     
 }
