@@ -6,13 +6,12 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
+@Entity
 @Data
-@NoArgsConstructor
 public class Livro {
+
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String titulo;
     private String autor;
     private String lancamento;
